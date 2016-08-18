@@ -81,7 +81,7 @@
     },
     "osm2vectortiles": {
       "type": "vector",
-      "url": "https://osm2vectortiles.tileserver.com/v2.json"
+      "url": "tiles.json"
     }
   },
   "sprite": "sprites/osm-liberty",
