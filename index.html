@@ -18,7 +18,7 @@
     <script>
         var map = new mapboxgl.Map({
             container: 'map', // container id
-            style: 'http://osm-liberty.lukasmartinelli.ch/osm-liberty.json', // style url
+            style: 'https://raw.githubusercontent.com/lukasmartinelli/osm-liberty/gh-pages/osm-liberty.json', // style url
             center: [8.5456, 47.3739], // starting position
             zoom: 11 // starting zoom
         });
@@ -27,7 +27,7 @@ map.on('load', function() {
     map.addSource('seamarks', {
         'type': 'raster',
         'tiles': [
-            'http://t1.openseamap.org/seamark/{z}/{x}/{y}.png'
+            'https://t1.openseamap.org/seamark/{z}/{x}/{y}.png'
         ],
         'tileSize': 256
     });
