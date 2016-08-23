@@ -82,7 +82,11 @@
     "osm2vectortiles": {
       "type": "vector",
       "url": "tiles.json"
-    }
+    },
+		"oseam" : {
+			"type" : "vector",
+      "url": "http://vectortiles.195.37.132.70.xip.io/data/oseam.json"
+			}
   },
   "sprite": "sprites/osm-liberty",
   "glyphs": "fonts/{fontstack}/{range}.pbf",
@@ -4168,6 +4172,25 @@
         "text-halo-width": 1
       }
     },
+        {
+            "id": "seamarks",
+            "type": "circle",
+            "metadata": {},
+            "source": "oseam",
+            "source-layer": "seamarks",
+            "interactive": true,
+            "filter": [
+                "in",
+                "$type",
+                "LineString",
+                "Point",
+                "Polygon"
+            ],
+            "layout": {},
+            "paint": {
+                "circle-color": "hsl(0, 67%, 41%)"
+            }
+        },
     {
       "id": "country_label_1",
       "type": "symbol",
